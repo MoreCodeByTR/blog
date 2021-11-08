@@ -1,18 +1,25 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="这是基于Vue2.X版本的"/>
+    <Snow city="上海，董婧"/>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import Snow from './components/Snow.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    Snow
+  },
+  mounted:function(){
+    window.vue=this
   }
+
 }
 </script>
 
