@@ -7,13 +7,19 @@
       <el-aside width="200px">
         <el-menu :default-openeds="['1']">
           <el-submenu index="1">
-            <template slot="title"><i class="el-icon-message"></i>  <router-link to="/home">首页</router-link></template>
+            <template slot="title"
+              ><i class="el-icon-message"></i>
+              <router-link to="/home">首页</router-link></template
+            >
             <el-menu-item-group>
               <el-menu-item index="1-1">
-                <router-link to="/snow">snow页面</router-link>
+                <router-link to="/snow">ElementUI组件</router-link>
               </el-menu-item>
               <el-menu-item index="1-2">
-                <router-link to="/hello">hello页面</router-link>
+                <router-link to="/hello">Vue启动页</router-link>
+              </el-menu-item>
+              <el-menu-item index="1-3">
+                <router-link to="/login">用户登录</router-link>
               </el-menu-item>
             </el-menu-item-group>
           </el-submenu>
@@ -25,7 +31,9 @@
             </el-menu-item-group>
           </el-submenu>
           <el-submenu index="3">
-            <template slot="title"><i class="el-icon-s-ticket"></i>导航三</template>
+            <template slot="title"
+              ><i class="el-icon-s-ticket"></i>导航三</template
+            >
             <el-menu-item-group>
               <el-menu-item index="1-1">选项1</el-menu-item>
               <el-menu-item index="1-2">选项2</el-menu-item>
@@ -37,16 +45,18 @@
         <el-main>
           <router-view> </router-view>
         </el-main>
-        <el-footer>Footer</el-footer>
+        <el-footer
+          >Copyright © 1996 - 2021 MoreCode. All Rights Reserved.</el-footer
+        >
       </el-container>
     </el-container>
   </el-container>
 </template>
 <script>
 export default {
-  name: 'Container',
+  name: "Container",
   props: {
-    city: String
+    city: String,
   },
   data() {
     return {
@@ -56,24 +66,29 @@ export default {
       showAd: false,
       time: new Date().toLocaleString(),
       model: "<a href='https://baidu.com' target='_blank'>百度一下</a>",
-      list: [{ id: 1, value: 'hahh' }, { id: 2, value: '洛杉矶湖人' }, { id: 3, value: '孟菲斯灰熊' }, { id: 4, value: '明尼苏达森林狼' }]
-    };
+      list: [
+        { id: 1, value: "hahh" },
+        { id: 2, value: "洛杉矶湖人" },
+        { id: 3, value: "孟菲斯灰熊" },
+        { id: 4, value: "明尼苏达森林狼" },
+      ],
+    }
   },
   watch: {
     count: function (newVal, oldval) {
       console.log(`你把我从${oldval}变成了${newVal}`)
     },
     time: function (newVal) {
-      let minutes = newVal.split(' ')[1].split(':')[2]
+      let minutes = newVal.split(" ")[1].split(":")[2]
       if (minutes > 30) {
         this.showAd = true
       }
-    }
+    },
   },
   computed: {
     total: function () {
       return this.count * this.rate
-    }
+    },
   },
   mounted() {
     setInterval(() => {
@@ -86,13 +101,12 @@ export default {
     },
     addRate: function () {
       this.rate++
-    }
-  }
-
+    },
+  },
 }
 </script>
 <style scoped>
-.el-header{
+.el-header {
   background-color: #b3c0d1;
   color: #333;
   line-height: 60px;
@@ -101,6 +115,7 @@ export default {
   background-color: #b3c0d1;
   color: #333;
   text-align: center;
+  line-height: 60px;
 }
 
 .el-aside {
@@ -111,6 +126,7 @@ export default {
 }
 
 .el-main {
+  min-height: 88vh;
   background-color: #e9eef3;
   color: #333;
 }
