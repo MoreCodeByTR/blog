@@ -1,6 +1,6 @@
 "use strict";
 module.exports = {
-  publicPath :'./ ',
+  publicPath :'./vue-demo/',
   runtimeCompiler: true,
   devServer: {
     disableHostCheck: true,
