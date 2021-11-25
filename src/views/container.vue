@@ -1,14 +1,20 @@
 <template>
   <el-container>
-    <el-header>Header</el-header>
+    <el-header>
+      <h2>租户控制台</h2>
+    </el-header>
     <el-container>
       <el-aside width="200px">
         <el-menu :default-openeds="['1']">
           <el-submenu index="1">
-            <template slot="title"><i class="el-icon-message"></i>导航一</template>
+            <template slot="title"><i class="el-icon-message"></i>  <router-link to="/home">首页</router-link></template>
             <el-menu-item-group>
-              <el-menu-item index="1-1">选项1</el-menu-item>
-              <el-menu-item index="1-2">选项2</el-menu-item>
+              <el-menu-item index="1-1">
+                <router-link to="/snow">snow页面</router-link>
+              </el-menu-item>
+              <el-menu-item index="1-2">
+                <router-link to="/hello">hello页面</router-link>
+              </el-menu-item>
             </el-menu-item-group>
           </el-submenu>
           <el-submenu index="2">
@@ -28,7 +34,9 @@
         </el-menu>
       </el-aside>
       <el-container>
-        <el-main>Main</el-main>
+        <el-main>
+          <router-view> </router-view>
+        </el-main>
         <el-footer>Footer</el-footer>
       </el-container>
     </el-container>
@@ -36,7 +44,7 @@
 </template>
 <script>
 export default {
-  name: 'container',
+  name: 'Container',
   props: {
     city: String
   },
@@ -84,12 +92,15 @@ export default {
 }
 </script>
 <style scoped>
-.el-header,
+.el-header{
+  background-color: #b3c0d1;
+  color: #333;
+  line-height: 60px;
+}
 .el-footer {
   background-color: #b3c0d1;
   color: #333;
   text-align: center;
-  line-height: 60px;
 }
 
 .el-aside {
@@ -99,12 +110,9 @@ export default {
   line-height: 200px;
 }
 
-
 .el-main {
   background-color: #e9eef3;
   color: #333;
-  text-align: center;
-  line-height: 160px;
 }
 
 body > .el-container {

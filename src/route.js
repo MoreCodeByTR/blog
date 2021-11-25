@@ -1,15 +1,19 @@
-import App from "./App"
-const container = () => import("@/components/container")
-const HelloWorld = () => import("@/components/HelloWorld")
-const Snow = () => import("@/components/Snow")
+// import App from "./App"
+const container = () => import("@/views/container")
+const HelloWorld = () => import("@/views/HelloWorld")
+const Snow = () => import("@/views/Snow")
+
+const Home = () => import("@/views/Home")
+const Login = () => import("@/views/Login")
 
 export default [
   {
     path: "/",
-    component: App,
+    component: container,
     children: [
       {
         path: "/hello",
+        alias: "/hi",
         component: HelloWorld,
       },
       {
@@ -17,8 +21,17 @@ export default [
         component: Snow,
       },
       {
+        path: "/home",
+        component: Home,
+      },
+      {
+        path: "/login",
+        component: Login,
+      },
+      {
         path: "/*",
-        component: container,
+        redirect: '/login',
+        component: Snow,
       },
     ],
   },
