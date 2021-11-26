@@ -27,7 +27,7 @@
             </el-menu-item-group>
           </el-submenu>
           <el-submenu index="2">
-            <template slot="title"><i class="el-icon-menu"></i>导航二</template>
+            <template slot="title"><i class="el-icon-menu"></i> <router-link to="/navigation">我的链接</router-link></template>
             <el-menu-item-group>
               <el-menu-item index="1-1">选项1</el-menu-item>
               <el-menu-item index="1-2">选项2</el-menu-item>

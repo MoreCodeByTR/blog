@@ -7,6 +7,8 @@ const Home = () => import("@/views/Home")
 const Login = () => import("@/views/Login")
 const Article = () => import("@/views/Article")
 
+const Navigation = () => import("@/views/navigation")
+
 export default [
   {
     path: "/",
@@ -34,8 +36,12 @@ export default [
         component: Article,
       },
       {
+        path: "/navigation",
+        component: Navigation,
+      },
+      {
         path: "/*",
-        redirect: '/login',
+        redirect: '/navigation',
         component: Snow,
       },
     ],
