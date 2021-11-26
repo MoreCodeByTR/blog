@@ -21,6 +21,9 @@
               <el-menu-item index="1-3">
                 <router-link to="/login">用户登录</router-link>
               </el-menu-item>
+              <el-menu-item index="1-4">
+                <router-link to="/article">文章展示</router-link>
+              </el-menu-item>
             </el-menu-item-group>
           </el-submenu>
           <el-submenu index="2">

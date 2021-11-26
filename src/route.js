@@ -5,6 +5,7 @@ const Snow = () => import("@/views/Snow")
 
 const Home = () => import("@/views/Home")
 const Login = () => import("@/views/Login")
+const Article = () => import("@/views/Article")
 
 export default [
   {
@@ -27,6 +28,10 @@ export default [
       {
         path: "/login",
         component: Login,
+      },
+      {
+        path: "/article",
+        component: Article,
       },
       {
         path: "/*",
