@@ -1,7 +1,7 @@
 <template>
   <el-container>
     <el-header>
-      <h2>租户控制台</h2>
+      <h2 style="font-family: STKaiti;"><i>Hi, nice to meet you</i></h2>
     </el-header>
     <el-container>
       <el-aside width="200px">
