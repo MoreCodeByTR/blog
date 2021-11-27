@@ -24,6 +24,9 @@
               <el-menu-item index="1-4">
                 <router-link to="/article">文章展示</router-link>
               </el-menu-item>
+                      <el-menu-item index="1-5">
+                <router-link to="/mark">mark笔记</router-link>
+              </el-menu-item>
             </el-menu-item-group>
           </el-submenu>
           <el-submenu index="2">

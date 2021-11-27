@@ -6,6 +6,7 @@ const Snow = () => import("@/views/Snow")
 const Home = () => import("@/views/Home")
 const Login = () => import("@/views/Login")
 const Article = () => import("@/views/Article")
+const Mark = () => import("@/views/Mark")
 
 const Navigation = () => import("@/views/navigation")
 
@@ -34,6 +35,10 @@ export default [
       {
         path: "/article",
         component: Article,
+      },
+      {
+        path: "/Mark",
+        component: Mark,
       },
       {
         path: "/navigation",
