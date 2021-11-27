@@ -6,7 +6,7 @@
 - 无状态协议
 - 注意，HTTP本质是无状态的，使用Cookies可以创建有状态的会话。
 
-
+![获取网页](https://raw.githubusercontent.com/MoreCodeByTR/LearningNote/master/notes/assets/imgs/http_fetching_a_page.png)
 ### 客户端：user-agent
 user-agent 就是任何能够为用户发起行为的工具。这个角色通常都是由浏览器来扮演。
 ```javascript

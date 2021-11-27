@@ -1,48 +1,44 @@
 <template>
   <el-container>
     <el-header>
-      <h2 style="font-family: STKaiti;"><i>Hi, nice to meet you</i></h2>
+      <h2 style="font-family: STKaiti"><i>Hi, nice to meet you</i></h2>
     </el-header>
     <el-container>
       <el-aside width="200px">
-        <el-menu :default-openeds="['1']">
+        <el-menu :default-openeds="['1','3']">
           <el-submenu index="1">
-            <template slot="title"
-              ><i class="el-icon-message"></i>
-              <router-link to="/home">首页</router-link></template
-            >
+            <template slot="title"><i class="el-icon-message"></i>
+              <router-link to="/navigation">首页</router-link>
+            </template>
             <el-menu-item-group>
-              <el-menu-item index="1-1">
-                <router-link to="/snow">ElementUI组件</router-link>
-              </el-menu-item>
-              <el-menu-item index="1-2">
-                <router-link to="/hello">Vue启动页</router-link>
-              </el-menu-item>
-              <el-menu-item index="1-3">
-                <router-link to="/login">用户登录</router-link>
-              </el-menu-item>
-              <el-menu-item index="1-4">
-                <router-link to="/article">文章展示</router-link>
-              </el-menu-item>
-                      <el-menu-item index="1-5">
-                <router-link to="/mark">mark笔记</router-link>
-              </el-menu-item>
+              <router-link to="/snow">
+                <el-menu-item index="1-1">ElementUI组件 </el-menu-item>
+              </router-link>
+              <router-link to="/hello">
+                <el-menu-item index="1-2">Vue启动页 </el-menu-item>
+              </router-link>
+              <router-link to="/login">
+                <el-menu-item index="1-3">用户登录 </el-menu-item>
+              </router-link>
+              <router-link to="/article">
+                <el-menu-item index="1-4">文章展示 </el-menu-item>
+              </router-link>
             </el-menu-item-group>
           </el-submenu>
           <el-submenu index="2">
-            <template slot="title"><i class="el-icon-menu"></i> <router-link to="/navigation">我的链接</router-link></template>
-            <el-menu-item-group>
-              <el-menu-item index="1-1">选项1</el-menu-item>
-              <el-menu-item index="1-2">选项2</el-menu-item>
-            </el-menu-item-group>
+            <template slot="title"><i class="el-icon-menu"></i>
+              <router-link to="/navigation">我的链接</router-link>
+            </template>
           </el-submenu>
           <el-submenu index="3">
-            <template slot="title"
-              ><i class="el-icon-s-ticket"></i>导航三</template
-            >
+            <template slot="title"><i class="el-icon-s-ticket"></i>我的笔记</template>
             <el-menu-item-group>
-              <el-menu-item index="1-1">选项1</el-menu-item>
-              <el-menu-item index="1-2">选项2</el-menu-item>
+              <router-link to="/markdown/hello">
+                <el-menu-item index="3-1">HTTP基础 </el-menu-item>
+              </router-link>
+              <router-link to="/markdown/world">
+                <el-menu-item index="3-2">前后端登录 </el-menu-item>
+              </router-link>
             </el-menu-item-group>
           </el-submenu>
         </el-menu>
@@ -51,9 +47,7 @@
         <el-main>
           <router-view> </router-view>
         </el-main>
-        <el-footer
-          >Copyright © 1996 - 2021 MoreCode. All Rights Reserved.</el-footer
-        >
+        <el-footer>Copyright © 1996 - 2021 MoreCode. All Rights Reserved.</el-footer>
       </el-container>
     </el-container>
   </el-container>
@@ -139,14 +133,5 @@ export default {
 
 body > .el-container {
   margin-bottom: 40px;
-}
-
-.el-container:nth-child(5) .el-aside,
-.el-container:nth-child(6) .el-aside {
-  line-height: 260px;
-}
-
-.el-container:nth-child(7) .el-aside {
-  line-height: 320px;
 }
 </style>
