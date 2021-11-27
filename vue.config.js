@@ -6,4 +6,5 @@ module.exports = {
     disableHostCheck: true,
     port: 5050
   },
+  outputDir:'docs',   //因为githubpage的文件夹选项需要将名字改为docs
 };
