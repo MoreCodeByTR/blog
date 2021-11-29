@@ -1,6 +1,7 @@
 <template>
 <div id="app">
  <router-view></router-view>
+   <a-back-top />
 </div>
 </template>
 
