@@ -66,6 +66,16 @@ export default {
       name: "ES6入门",
       herf: "https://es6.ruanyifeng.com/#docs/async",
     },
+    {
+      name: "axios",
+      herf: "http://www.axios-js.com/zh-cn/docs/",
+      title:"发送http请求"
+    },
+    {
+      name: "qs库",
+      herf: "https://www.npmjs.com/package/qs",
+      title:"querystring序列化和反序列化"
+    },
   ],
   dalao:[
     {
@@ -75,6 +85,10 @@ export default {
     {
       name: "阮一峰技术博客",
       herf: "http://www.ruanyifeng.com/blog/",
+    },
+    {
+      name: "面试资源",
+      herf: "https://juejin.cn/post/6941546135827775525",
     },
   ]
 }

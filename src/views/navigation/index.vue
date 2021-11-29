@@ -38,12 +38,12 @@
       </a-card>
       <a-card title="JavaScript" style="width: 300px">
         <p v-for="item in linkList.javascript" :key="item.name">
-          <a :href="item.herf" target="_blank">{{ item.name }}</a>
+          <a :href="item.herf" target="_blank" :title="item.title">{{ item.name }}</a>
         </p>
       </a-card>
       <a-card title="大佬博客" style="width: 300px">
         <p v-for="item in linkList.dalao" :key="item.name">
-          <a :href="item.herf" target="_blank">{{ item.name }}</a>
+          <a :href="item.herf" target="_blank" >{{ item.name }}</a>
         </p>
       </a-card>
     </div>

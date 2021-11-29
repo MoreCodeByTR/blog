@@ -9,12 +9,17 @@ const Article = () => import("@/views/Article")
 const MarkDown = () => import("@/views/MarkDown")
 
 const Navigation = () => import("@/views/navigation")
+const Test = () => import("@/views/Test")
 
 export default [
   {
     path: "/",
     component: container,
     children: [
+      {
+        path: "/test",
+        component: Test,
+      },
       {
         path: "/hello",
         alias: "/hi",

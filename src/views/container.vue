@@ -11,6 +11,9 @@
               <router-link to="/navigation">首页</router-link>
             </template>
             <el-menu-item-group>
+              <router-link to="/test">
+                <el-menu-item index="1-0">开发测试 </el-menu-item>
+              </router-link>
               <router-link to="/snow">
                 <el-menu-item index="1-1">ElementUI组件 </el-menu-item>
               </router-link>
