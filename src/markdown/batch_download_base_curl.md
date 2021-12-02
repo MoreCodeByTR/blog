@@ -15,7 +15,7 @@ curl -O https://www.baidu.com/images/moon.png
 ```
 将需要下载的链接粘贴到sh中，并使用vscode多行编辑工具，给链接首部添加curl -O
 ```shell
-# !bin/hash
+# !bin/bash
 curl -O https://player.jdcloud-elive.com/fission/resources/image/shareimg1.png
 curl -O https://player.jdcloud-elive.com/fission/resources/image/shareimg1.png
 curl -O https://player.jdcloud-elive.com/fission/resources/image/shareimg_hd.png
