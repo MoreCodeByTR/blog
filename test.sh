@@ -1,4 +1,4 @@
-# !bin/hash
+# !bin/bash
 echo 'Hello world'
 
 curl -O https://player.jdcloud-elive.com/fission/resources/image/shareimg1.png
