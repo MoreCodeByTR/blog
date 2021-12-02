@@ -5,6 +5,7 @@ export default {
       herf: "https://cli.vuejs.org/zh/config/#vue-config-js",
     },
     { name: "Vue 官网", herf: "https://cn.vuejs.org/v2/guide/list.html" },
+    { name: "Vue-router官网", herf: "https://router.vuejs.org/zh/guide/" },
   ],
   react: [
     {
@@ -35,6 +36,11 @@ export default {
     {
       name: "AntdV官网",
       herf: "https://www.antdv.com/components/card-cn/",
+    },
+    {
+      name: "Vant官网",
+      herf: "https://vant-contrib.gitee.io/vant/#/zh-CN/switch",
+      title:"有赞的移动端H5组件库"
     },
   ],
   tool:[

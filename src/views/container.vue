@@ -42,6 +42,9 @@
               <router-link to="/markdown/world">
                 <el-menu-item index="3-2">前后端登录 </el-menu-item>
               </router-link>
+                <router-link to="/markdown/batchdownload">
+                <el-menu-item index="3-3">批量下载图片 </el-menu-item>
+              </router-link>
             </el-menu-item-group>
           </el-submenu>
         </el-menu>
