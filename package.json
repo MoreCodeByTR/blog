@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:page": "vue-cli-service build && sh updatePage.sh",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

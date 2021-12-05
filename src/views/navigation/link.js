@@ -6,6 +6,7 @@ export default {
     },
     { name: "Vue 官网", herf: "https://cn.vuejs.org/v2/guide/list.html" },
     { name: "Vue-router官网", herf: "https://router.vuejs.org/zh/guide/" },
+    { name: "Vuex官网", herf: "https://vuex.vuejs.org/zh/guide/state.html" },
   ],
   react: [
     {
