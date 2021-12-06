@@ -24,3 +24,8 @@ curl -O https://player.jdcloud-elive.com/fission/resources/image/shareimg_hd.png
 ```
 
 执行bash [name].sh即可将图片下载当前文件夹
+
+如果链接带括号，需要使用引号包起来
+```
+curl -O 'https://player.jdcloud-elive.com/fission/resources/image/shop-icon(3x).png'
+```
