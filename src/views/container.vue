@@ -5,7 +5,8 @@
     </el-header>
     <el-container>
       <el-aside width="200px">
-        <el-menu :default-openeds="['1','3']">
+        <el-menu :default-openeds="['1','3']"
+                 router>
           <el-submenu index="1">
             <template slot="title"><i class="el-icon-message"></i>
               <router-link to="/navigation">首页</router-link>
@@ -42,8 +43,14 @@
               <router-link to="/markdown/world">
                 <el-menu-item index="3-2">前后端登录 </el-menu-item>
               </router-link>
-                <router-link to="/markdown/batchdownload">
+              <router-link to="/markdown/batchdownload">
                 <el-menu-item index="3-3">批量下载图片 </el-menu-item>
+              </router-link>
+              <router-link to="/markdown/javascript_chapter01">
+                <el-menu-item index="3-4">Js eval、with </el-menu-item>
+              </router-link>
+              <router-link to="/markdown/javascript_chapter02">
+                <el-menu-item index="3-4">Js函数作用域 </el-menu-item>
               </router-link>
             </el-menu-item-group>
           </el-submenu>
