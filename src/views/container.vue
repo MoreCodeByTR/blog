@@ -1,7 +1,8 @@
 <template>
   <el-container>
-    <el-header>
-      <h2 style="font-family: STKaiti"><i>Hi, nice to meet you</i></h2>
+    <el-header height="70px">
+      <img class="avatar" src="https://avatars.githubusercontent.com/u/51108500?v=4" />
+       <span style="font-family: STKaiti ;font-size:25px;margin-left:20px"><i>Hi, nice to meet you</i></span>
     </el-header>
     <el-container>
       <el-aside width="200px">
@@ -119,10 +120,16 @@ export default {
 }
 </script>
 <style scoped>
+.avatar {
+    width: 50px;
+    height: 50px;
+   border-radius: 25px;
+}
+
 .el-header {
   background-color: #b3c0d1;
   color: #333;
-  line-height: 60px;
+  line-height: 70px;
 }
 .el-footer {
   background-color: #b3c0d1;
