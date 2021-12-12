@@ -1,29 +1,13 @@
-function Cool(){
-  var name='tr'
-  var arr=[1,2,3];
-
-  function addArr(i){
-    arr.push(i)
-    console.log(arr)
-  }
-
-  function setName(i){
-      name=i
-  }
-
-  function getName(){
-   return name
+function foo(){
+  console.log(a)
 }
 
-  return {
-    addArr:addArr,
-    getName:getName,
-    setName:setName
-  }
+
+function bar(){
+ var a=10
+ foo()
 }
 
-var foo=Cool();
+var a=100
 
-console.log(foo.getName())
-foo.setName('morecode')
-console.log(foo.getName())
+bar()
