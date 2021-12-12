@@ -53,6 +53,9 @@
               <router-link to="/markdown/javascript_chapter02">
                 <el-menu-item index="3-4">Js函数作用域 </el-menu-item>
               </router-link>
+                    <router-link to="/markdown/javascript_chapter03">
+                <el-menu-item index="3-4">Js函数闭包 </el-menu-item>
+              </router-link>
             </el-menu-item-group>
           </el-submenu>
         </el-menu>
