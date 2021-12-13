@@ -1,8 +1,9 @@
 # !bin/bash
 echo '上传githubpages'
 
+echo $1
 git add -A
-git commit -m"更新github-pages"
+git commit -m "$1"
 git pull
 git push
 
