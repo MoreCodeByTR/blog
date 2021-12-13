@@ -35,7 +35,7 @@ export default {
   },
   data() {
     return {
-      breads:['曦和','商户中心','门店管理','ElementUI'],
+      breads:['ElementUI'],
       active: 2,
       count: 1,
       rate: 1,
