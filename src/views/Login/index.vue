@@ -46,7 +46,7 @@ export default {
   },
   data() {
     return {
-      list: ["曦和", "商户中心", "门店管理", "登录"],
+      list: ["登录"],
       formLayout: 'horizontal',
       form: this.$form.createForm(this, { name: 'coordinated' }),
     };
