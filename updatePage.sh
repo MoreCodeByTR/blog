@@ -1,9 +1,12 @@
 # !bin/bash
 echo '上传githubpages'
 
-echo $1
+message=${1:-"更新github-pages"} 
+# message = $1 || "更新github-pages"
+
+echo $message
 git add -A
-git commit -m "$1"
+git commit -m $message
 git pull
 git push
 
