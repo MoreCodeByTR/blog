@@ -259,7 +259,7 @@ export default {
   },
   data() {
     return {
-      list: ["曦和", "商户中心", "门店管理", "登录"],
+      list: [],
       formLayout: 'horizontal',
       form: this.$form.createForm(this, { name: 'coordinated' }),
     };

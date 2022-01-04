@@ -1,13 +1,7 @@
-function foo(){
-  console.log(a)
+for(var i=0;i<5;i++){
+  (function(){
+
+      console.log(i)
+
+  })()
 }
-
-
-function bar(){
- var a=10
- foo()
-}
-
-var a=100
-
-bar()

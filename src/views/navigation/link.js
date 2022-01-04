@@ -97,5 +97,21 @@ export default {
       name: "面试资源",
       herf: "https://juejin.cn/post/6941546135827775525",
     },
+    {
+      name: "印记中文-前端工具推荐",
+      herf: "https://docschina.org/",
+    },
+    {
+      name: "前端工具合集",
+      herf: "https://devtool.tech/",
+    },
+    {
+      name: "前端进阶知识",
+      herf: "https://q.shanyue.tech/",
+    },
+    {
+      name: "千古前端图文教程",
+      herf: "https://web.qianguyihao.com/",
+    },
   ]
 }

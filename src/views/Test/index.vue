@@ -27,7 +27,7 @@ export default {
   props: {},
   data() {
     return {
-      list: ["曦和", "商户中心", "门店管理", "主页"],
+      list: [],
       myParams: null,
       count: 0,
     }
