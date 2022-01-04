@@ -64,7 +64,7 @@
         <el-main>
           <router-view> </router-view>
         </el-main>
-        <el-footer>Copyright © 1996 - 2021 MoreCode. All Rights Reserved.</el-footer>
+        <el-footer>Copyright © 1996 - {{currentYear}} MoreCode. All Rights Reserved.</el-footer>
       </el-container>
     </el-container>
   </el-container>
@@ -82,6 +82,7 @@ export default {
       rate: 1,
       showAd: false,
       time: new Date().toLocaleString(),
+      currentYear:new Date().getFullYear(),
       model: "<a href='https://baidu.com' target='_blank'>百度一下</a>",
       list: [
         { id: 1, value: "hahh" },
