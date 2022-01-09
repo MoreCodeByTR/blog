@@ -61,6 +61,10 @@ export default {
       name: "在线生成AST",
       herf: "https://astexplorer.net/",
     },
+    {
+      name: "VsCode快捷键",
+      herf: "https://www.cnblogs.com/qianguyihao/p/10732375.html",
+    },
   ],
   html:[
     {
@@ -112,6 +116,14 @@ export default {
     {
       name: "千古前端图文教程",
       herf: "https://web.qianguyihao.com/",
+    },
+    {
+      name: "千古前端导航",
+      herf: "https://www.cnblogs.com/qianguyihao/p/10701923.html",
+    },
+    {
+      name: "JS书籍测评",
+      herf: "https://mp.weixin.qq.com/s/nffwL_ma1t30lr4ooyWARQ",
     },
   ]
 }
