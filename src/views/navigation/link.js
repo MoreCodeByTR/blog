@@ -45,6 +45,8 @@ export default {
     },
   ],
   tool:[
+    {name:'腾讯云技术手册',
+  herf:'https://cloud.tencent.com/developer/devdocs'},
     {
       name: "yapi接口平台",
       herf: "http://yapi.smart-xwork.cn/",
@@ -65,12 +67,32 @@ export default {
       name: "VsCode快捷键",
       herf: "https://www.cnblogs.com/qianguyihao/p/10732375.html",
     },
+    {
+      name: "清除浏览器默认样式",
+      herf: "https://www.cnblogs.com/fitzlovecode/p/reset_css.html",
+    },
   ],
   html:[
     {
       name: "MDN官网",
       herf: "https://developer.mozilla.org/zh-CN/docs/Web",
     },
+    {
+      name:'WebKit官网查询',
+      herf:'https://webkit.org/css-status/#'
+    },
+    {
+      name:'Chrome浏览器内核官网',
+      herf:'http://www.chromium.org/Home'
+    },
+    {
+      name:'Chrome DevTools',
+      herf:'https://developer.chrome.com/docs/devtools/'
+    },
+    {
+      name:'devtools调试库',
+      herf:'https://devtools.glitch.me/network/getstarted.html'
+    }
   ],
   javascript:[
     {

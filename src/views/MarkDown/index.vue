@@ -18,6 +18,9 @@
         <div class="markdown-body" v-if="show === 'javascript_chapter03'">
       <JavascriptChapter03></JavascriptChapter03>
     </div>
+         <div class="markdown-body" v-if="show === 'dev_tools'">
+      <DevTools></DevTools>
+    </div>
   </div>
 </template>
 <script>
@@ -28,6 +31,7 @@ import BatchDownload from "@/markdown/batch_download_base_curl.md"
 import JavascriptChapter01 from "@/markdown/javascript_chapter01.md"
 import JavascriptChapter02 from "@/markdown/javascript_chapter02.md"
 import JavascriptChapter03 from "@/markdown/javascript_chapter03.md"
+import DevTools from "@/markdown/devtools.md"
 
 export default {
   name: "Home",
@@ -39,6 +43,7 @@ export default {
      JavascriptChapter01,
     JavascriptChapter02,
      JavascriptChapter03,
+     DevTools
   },
   props: {},
   data() {

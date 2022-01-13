@@ -1,8 +1,9 @@
 <template>
   <el-container>
     <el-header height="70px">
-      <img class="avatar" src="https://avatars.githubusercontent.com/u/51108500?v=4" />
-       <span style="font-family: STKaiti ;font-size:25px;margin-left:20px"><i>Hi, nice to meet you</i></span>
+      <img class="avatar"
+           src="https://avatars.githubusercontent.com/u/51108500?v=4" />
+      <span style="font-family: STKaiti ;font-size:25px;margin-left:20px"><i>Hi, nice to meet you</i></span>
     </el-header>
     <el-container>
       <el-aside width="200px">
@@ -53,8 +54,11 @@
               <router-link to="/markdown/javascript_chapter02">
                 <el-menu-item index="3-5">Js函数作用域 </el-menu-item>
               </router-link>
-                    <router-link to="/markdown/javascript_chapter03">
+              <router-link to="/markdown/javascript_chapter03">
                 <el-menu-item index="3-6">Js函数闭包 </el-menu-item>
+              </router-link>
+                    <router-link to="/markdown/dev_tools">
+                <el-menu-item index="3-7">Chrome开发者工具 </el-menu-item>
               </router-link>
             </el-menu-item-group>
           </el-submenu>
@@ -82,7 +86,7 @@ export default {
       rate: 1,
       showAd: false,
       time: new Date().toLocaleString(),
-      currentYear:new Date().getFullYear(),
+      currentYear: new Date().getFullYear(),
       model: "<a href='https://baidu.com' target='_blank'>百度一下</a>",
       list: [
         { id: 1, value: "hahh" },
@@ -125,9 +129,9 @@ export default {
 </script>
 <style scoped>
 .avatar {
-    width: 50px;
-    height: 50px;
-   border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
 }
 
 .el-header {
