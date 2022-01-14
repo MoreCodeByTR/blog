@@ -70,6 +70,10 @@ export default {
   padding: 45px;
 }
 
+.markdown-body img{
+  max-width: 800px;
+}
+
 @media (max-width: 767px) {
   .markdown-body {
     padding: 15px;
