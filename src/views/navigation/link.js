@@ -16,6 +16,10 @@ export default {
     { name: "Redux文档", herf: "https://www.redux.org.cn/" },
     { name: "MobX文档", herf: "https://cn.mobx.js.org/" },
     { name: "图解React", herf: "https://7kms.github.io/react-illustration-series/interview/01-setstate" },
+    {name:'React-router教程案例v5',herf:'https://v5.reactrouter.com/web/guides/philosophy'},
+    {name:'Reach-router教程案例',herf:'https://reach.tech/router/example/basic'},
+    {name:'react在线练习',herf:'https://reach.tech/router/example/basic'},
+    {name:'react全家桶分享',herf:'https://github.com/brickspert/blog/issues/1'}
   ],
   wechat: [
     {
@@ -71,6 +75,10 @@ export default {
       name: "清除浏览器默认样式",
       herf: "https://www.cnblogs.com/fitzlovecode/p/reset_css.html",
     },
+    {
+      name:'gitbook使用',
+      herf:'https://zhuanlan.zhihu.com/p/34946169'
+    }
   ],
   html:[
     {
@@ -147,5 +155,9 @@ export default {
       name: "JS书籍测评",
       herf: "https://mp.weixin.qq.com/s/nffwL_ma1t30lr4ooyWARQ",
     },
+    {
+      name:'emoji在线生成',
+      herf:'https://translate.yandex.com/?lang=zh-emj&text=%E4%B8%AD%E5%9B%BD'
+    }
   ]
 }
