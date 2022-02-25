@@ -100,6 +100,10 @@ export default {
     {
       name:'devtools调试库',
       herf:'https://devtools.glitch.me/network/getstarted.html'
+    },
+    {
+      name:'Blob、FileReader和FormData的区别',
+      herf:'https://cloud.tencent.com/developer/article/1525156'
     }
   ],
   javascript:[
