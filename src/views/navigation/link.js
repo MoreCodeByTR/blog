@@ -77,7 +77,7 @@ export default {
     },
     {
       name:'gitbook使用',
-      herf:'https://zhuanlan.zhihu.com/p/34946169'
+      herf:'https://www.jianshu.com/p/799a09add46c'
     }
   ],
   html:[
