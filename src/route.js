@@ -7,6 +7,7 @@ const Home = () => import("@/views/Home")
 const Login = () => import("@/views/Login")
 const Article = () => import("@/views/Article")
 const MarkDown = () => import("@/views/MarkDown")
+const Notes = () => import("@/views/Notes")
 
 const Navigation = () => import("@/views/navigation")
 const Test = () => import("@/views/Test")
@@ -44,6 +45,10 @@ export default [
       {
         path: "/markdown/:articleName",
         component: MarkDown,
+      },
+      {
+        path: "/notes/:articleName",
+        component: Notes,
       },
       {
         path: "/navigation",

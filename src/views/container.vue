@@ -7,7 +7,7 @@
     </el-header>
     <el-container>
       <el-aside width="200px">
-        <el-menu :default-openeds="['1','3']"
+        <el-menu :default-openeds="['4']"
                  router>
           <el-submenu index="1">
             <template slot="title"><i class="el-icon-message"></i>
@@ -57,8 +57,28 @@
               <router-link to="/markdown/javascript_chapter03">
                 <el-menu-item index="3-6">Js函数闭包 </el-menu-item>
               </router-link>
-                    <router-link to="/markdown/dev_tools">
+              <router-link to="/markdown/dev_tools">
                 <el-menu-item index="3-7">Chrome开发者工具 </el-menu-item>
+              </router-link>
+            </el-menu-item-group>
+          </el-submenu>
+          <el-submenu index="4">
+            <template slot="title"><i class="el-icon-s-ticket"></i>面试学习</template>
+            <el-menu-item-group>
+              <router-link to="/notes/browser-cache">
+                <el-menu-item index="4-1">浏览器缓存 </el-menu-item>
+              </router-link>
+                  <router-link to="/notes/ParseUrl">
+                <el-menu-item index="4-2">Url解析 </el-menu-item>
+              </router-link>
+                  <router-link to="/notes/DeferAndAsync">
+                <el-menu-item index="4-3">Defer、Async </el-menu-item>
+              </router-link>
+                  <router-link to="/notes/HttpsProtocol">
+                <el-menu-item index="4-4">浏览器缓存 </el-menu-item>
+              </router-link>
+                  <router-link to="/notes/JS01">
+                <el-menu-item index="4-5">JS基础01 </el-menu-item>
               </router-link>
             </el-menu-item-group>
           </el-submenu>

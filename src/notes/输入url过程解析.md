@@ -12,7 +12,8 @@
 - 5.浏览器接收服务器的HTTP响应报文
 - 6.浏览器进行页面渲染
 - 7.通过四次挥手关闭TCP连接
-![浏览器页面渲染](https://upload-images.jianshu.io/upload_images/6007177-889050efeb3c811d.png?imageMogr2/auto-orient/strip|imageView2/2/w/900/format/webp)
+
+![浏览器页面渲染](https://img-blog.csdnimg.cn/20200417223938321.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NDX1RvZ2V0aGVy,size_16,color_FFFFFF,t_70)
 > 1.解析HTML生成DOM树；
 > 
 > 2.解析CSS生成CSS规则；
