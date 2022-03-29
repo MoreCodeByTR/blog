@@ -1,16 +1,20 @@
 <template>
   <el-container>
     <el-header height="70px">
-      <img class="avatar"
-           src="https://avatars.githubusercontent.com/u/51108500?v=4" />
-      <span style="font-family: STKaiti ;font-size:25px;margin-left:20px"><i>Hi, nice to meet you</i></span>
+      <img
+        class="avatar"
+        src="https://avatars.githubusercontent.com/u/51108500?v=4"
+      />
+      <span style="font-family: STKaiti; font-size: 25px; margin-left: 20px"
+        ><i>Hi, nice to meet you</i></span
+      >
     </el-header>
     <el-container>
       <el-aside width="200px">
-        <el-menu :default-openeds="['4']"
-                 router>
+        <el-menu :default-openeds="['4']" router>
           <el-submenu index="1">
-            <template slot="title"><i class="el-icon-message"></i>
+            <template slot="title"
+              ><i class="el-icon-message"></i>
               <router-link to="/navigation">首页</router-link>
             </template>
             <el-menu-item-group>
@@ -32,12 +36,15 @@
             </el-menu-item-group>
           </el-submenu>
           <el-submenu index="2">
-            <template slot="title"><i class="el-icon-menu"></i>
+            <template slot="title"
+              ><i class="el-icon-menu"></i>
               <router-link to="/navigation">我的链接</router-link>
             </template>
           </el-submenu>
           <el-submenu index="3">
-            <template slot="title"><i class="el-icon-s-ticket"></i>我的笔记</template>
+            <template slot="title"
+              ><i class="el-icon-s-ticket"></i>我的笔记</template
+            >
             <el-menu-item-group>
               <router-link to="/markdown/hello">
                 <el-menu-item index="3-1">HTTP基础 </el-menu-item>
@@ -63,22 +70,27 @@
             </el-menu-item-group>
           </el-submenu>
           <el-submenu index="4">
-            <template slot="title"><i class="el-icon-s-ticket"></i>面试学习</template>
+            <template slot="title"
+              ><i class="el-icon-s-ticket"></i>面试学习</template
+            >
             <el-menu-item-group>
               <router-link to="/notes/browser-cache">
                 <el-menu-item index="4-1">浏览器缓存 </el-menu-item>
               </router-link>
-                  <router-link to="/notes/ParseUrl">
+              <router-link to="/notes/ParseUrl">
                 <el-menu-item index="4-2">Url解析 </el-menu-item>
               </router-link>
-                  <router-link to="/notes/DeferAndAsync">
+              <router-link to="/notes/DeferAndAsync">
                 <el-menu-item index="4-3">Defer、Async </el-menu-item>
               </router-link>
-                  <router-link to="/notes/HttpsProtocol">
+              <router-link to="/notes/HttpsProtocol">
                 <el-menu-item index="4-4">浏览器缓存 </el-menu-item>
               </router-link>
-                  <router-link to="/notes/JS01">
-                <el-menu-item index="4-5">JS基础01 </el-menu-item>
+               <router-link to="/notes/SimpleRequest">
+                <el-menu-item index="4-5">简单、复杂请求 </el-menu-item>
+              </router-link>
+              <router-link to="/notes/JS01">
+                <el-menu-item index="4-6">JS基础01 </el-menu-item>
               </router-link>
             </el-menu-item-group>
           </el-submenu>
@@ -88,7 +100,10 @@
         <el-main>
           <router-view> </router-view>
         </el-main>
-        <el-footer>Copyright © 1996 - {{currentYear}} MoreCode. All Rights Reserved.</el-footer>
+        <el-footer
+          >Copyright © 1996 - {{ currentYear }} MoreCode. All Rights
+          Reserved.</el-footer
+        >
       </el-container>
     </el-container>
   </el-container>
@@ -114,38 +129,38 @@ export default {
         { id: 3, value: "孟菲斯灰熊" },
         { id: 4, value: "明尼苏达森林狼" },
       ],
-    }
+    };
   },
   watch: {
     count: function (newVal, oldval) {
-      console.log(`你把我从${oldval}变成了${newVal}`)
+      console.log(`你把我从${oldval}变成了${newVal}`);
     },
     time: function (newVal) {
-      let minutes = newVal.split(" ")[1].split(":")[2]
+      let minutes = newVal.split(" ")[1].split(":")[2];
       if (minutes > 30) {
-        this.showAd = true
+        this.showAd = true;
       }
     },
   },
   computed: {
     total: function () {
-      return this.count * this.rate
+      return this.count * this.rate;
     },
   },
   mounted() {
     setInterval(() => {
-      this.time = new Date().toLocaleString()
-    }, 1000)
+      this.time = new Date().toLocaleString();
+    }, 1000);
   },
   methods: {
     addCount: function () {
-      this.count++
+      this.count++;
     },
     addRate: function () {
-      this.rate++
+      this.rate++;
     },
   },
-}
+};
 </script>
 <style scoped>
 .avatar {
