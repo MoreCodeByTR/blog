@@ -74,23 +74,8 @@
               ><i class="el-icon-s-ticket"></i>面试学习</template
             >
             <el-menu-item-group>
-              <router-link to="/notes/browser-cache">
-                <el-menu-item index="4-1">浏览器缓存 </el-menu-item>
-              </router-link>
-              <router-link to="/notes/ParseUrl">
-                <el-menu-item index="4-2">Url解析 </el-menu-item>
-              </router-link>
-              <router-link to="/notes/DeferAndAsync">
-                <el-menu-item index="4-3">Defer、Async </el-menu-item>
-              </router-link>
-              <router-link to="/notes/HttpsProtocol">
-                <el-menu-item index="4-4">浏览器缓存 </el-menu-item>
-              </router-link>
-               <router-link to="/notes/SimpleRequest">
-                <el-menu-item index="4-5">简单、复杂请求 </el-menu-item>
-              </router-link>
-              <router-link to="/notes/JS01">
-                <el-menu-item index="4-6">JS基础01 </el-menu-item>
+               <router-link  v-for="item in NotesMenu" :key="item.key" :to="item.to">
+                <el-menu-item :index="item.key">{{item.label}} </el-menu-item>
               </router-link>
             </el-menu-item-group>
           </el-submenu>
@@ -109,6 +94,7 @@
   </el-container>
 </template>
 <script>
+import {NotesMenu} from'./menu'
 export default {
   name: "Container",
   props: {
@@ -116,6 +102,7 @@ export default {
   },
   data() {
     return {
+      NotesMenu:NotesMenu,
       active: 2,
       count: 1,
       rate: 1,

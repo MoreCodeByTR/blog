@@ -10,6 +10,9 @@ import DeferAndAsync from "@/notes/defer&&async.md";
 import HttpsProtocol from "@/notes/https.md";
 import JS01 from "@/notes/javascript-01.md";
 import SimpleRequest from "@/notes/简单请求和复杂请求.md";
+import HTML01 from "@/notes/html-01.md";
+import HTTPBasic from "@/notes/HTTP协议.md";
+import BrowserTheory from "@/notes/浏览器原理.md";
 
 export default {
   name: "Home",
@@ -21,6 +24,9 @@ export default {
     HttpsProtocol,
     JS01,
     SimpleRequest,
+    HTML01,
+    HTTPBasic,
+    BrowserTheory,
   },
   props: {},
   data() {
@@ -33,6 +39,9 @@ export default {
         { code: "JS01", component: "JS01" },
         { code: "HttpsProtocol", component: "HttpsProtocol" },
         { code: "SimpleRequest", component: "SimpleRequest" },
+        { code: "html-basic", component: "HTML01" },
+        { code: "http", component: "HTTPBasic" },
+        { code: "BrowserTheory", component: "BrowserTheory" },
       ],
     };
   },
