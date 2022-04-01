@@ -1,10 +1,12 @@
 <template>
   <el-container>
     <el-header height="70px">
-      <img
+      <a target="_blank" href="https://github.com/MoreCodeByTR" title="github">
+         <img
         class="avatar"
         src="https://avatars.githubusercontent.com/u/51108500?v=4"
       />
+      </a>
       <span style="font-family: STKaiti; font-size: 25px; margin-left: 20px"
         ><i>Hi, nice to meet you</i></span
       >
