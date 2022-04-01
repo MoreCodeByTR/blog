@@ -13,6 +13,7 @@ import SimpleRequest from "@/notes/简单请求和复杂请求.md";
 import HTML01 from "@/notes/html-01.md";
 import HTTPBasic from "@/notes/HTTP协议.md";
 import BrowserTheory from "@/notes/浏览器原理.md";
+import BrowserOptimize from "@/notes/页面性能优化.md";
 
 export default {
   name: "Home",
@@ -27,6 +28,7 @@ export default {
     HTML01,
     HTTPBasic,
     BrowserTheory,
+    BrowserOptimize,
   },
   props: {},
   data() {
@@ -42,6 +44,7 @@ export default {
         { code: "html-basic", component: "HTML01" },
         { code: "http", component: "HTTPBasic" },
         { code: "BrowserTheory", component: "BrowserTheory" },
+         { code: "BrowserOptimize", component: "BrowserOptimize" },
       ],
     };
   },

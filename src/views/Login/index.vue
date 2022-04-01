@@ -1,5 +1,6 @@
 <template>
   <div>
+    <p v-if="count===98">点击了提交按钮</p>
     <Breadcrumb :items="list" />
     <a-form :form="form"
             :label-col="{ span: 8 }"
@@ -47,12 +48,19 @@ export default {
   data() {
     return {
       list: ["登录"],
+      count:100,
       formLayout: 'horizontal',
       form: this.$form.createForm(this, { name: 'coordinated' }),
     };
   },
+  watch:{
+    count:function(old,newVal){
+      console.log(old,newVal)
+    }
+  },
   methods: {
     handleSubmit(e) {
+      this.count=98
       e.preventDefault();
       this.form.validateFields((err, values) => {
         if (!err) {
