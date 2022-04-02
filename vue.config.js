@@ -3,7 +3,7 @@
 var path=require('path');
 
 module.exports = {
-  publicPath :'/vue-demo/',
+  publicPath :'/blog/',
   runtimeCompiler: true,
   devServer: {
     disableHostCheck: true,
