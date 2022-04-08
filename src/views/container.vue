@@ -17,7 +17,7 @@
           <el-submenu index="1">
             <template slot="title"
               ><i class="el-icon-message"></i>
-              <router-link to="/navigation">首页</router-link>
+              <router-link to="/navigation">测试</router-link>
             </template>
             <el-menu-item-group>
               <router-link to="/test">
@@ -31,9 +31,6 @@
               </router-link>
               <router-link to="/login">
                 <el-menu-item index="1-3">用户登录 </el-menu-item>
-              </router-link>
-              <router-link to="/article">
-                <el-menu-item index="1-4">文章展示 </el-menu-item>
               </router-link>
             </el-menu-item-group>
           </el-submenu>
