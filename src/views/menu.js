@@ -9,4 +9,5 @@ export const NotesMenu = [
   { index: "notes-8", to: "/notes/html-basic", label: "HTML(一)" },
   { index: "notes-9", to: "/notes/BrowserTheory", label: "浏览器原理" },
   { index: "notes-10", to: "/notes/BrowserOptimize", label: "页面性能优化" },
+  { index: "notes-11", to: "/notes/ES6Summary", label: "ES6总结" },
 ];

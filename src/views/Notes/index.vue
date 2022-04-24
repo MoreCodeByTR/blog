@@ -14,6 +14,7 @@ import HTML01 from "@/notes/html-01.md";
 import HTTPBasic from "@/notes/HTTP协议.md";
 import BrowserTheory from "@/notes/浏览器原理.md";
 import BrowserOptimize from "@/notes/页面性能优化.md";
+import ES6Summary from "@/notes/ES6总结.md";
 
 export default {
   name: "Home",
@@ -29,12 +30,14 @@ export default {
     HTTPBasic,
     BrowserTheory,
     BrowserOptimize,
+    ES6Summary
   },
   props: {},
   data() {
     return {
       currentView: "BrowserCache",
       notesMap: [
+        { code: "ES6Summary", component: "ES6Summary" },
         { code: "browser-cache", component: "BrowserCache" },
         { code: "ParseUrl", component: "ParseUrl" },
         { code: "DeferAndAsync", component: "DeferAndAsync" },
@@ -44,7 +47,7 @@ export default {
         { code: "html-basic", component: "HTML01" },
         { code: "http", component: "HTTPBasic" },
         { code: "BrowserTheory", component: "BrowserTheory" },
-         { code: "BrowserOptimize", component: "BrowserOptimize" },
+        { code: "BrowserOptimize", component: "BrowserOptimize" },
       ],
     };
   },

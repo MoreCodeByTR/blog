@@ -125,6 +125,10 @@ export default {
   ],
   dalao:[
     {
+      name:'算法题解',
+      herf:'https://programmercarl.com/'
+    },
+    {
       name: "ali-李金珂",
       herf: "https://www.lijinke.cn/archives/",
     },
