@@ -15,6 +15,8 @@ import HTTPBasic from "@/notes/HTTP协议.md";
 import BrowserTheory from "@/notes/浏览器原理.md";
 import BrowserOptimize from "@/notes/页面性能优化.md";
 import ES6Summary from "@/notes/ES6总结.md";
+import InterviewSummary from "@/notes/面试总结.md";
+import Coding from "@/notes/手写代码题.md";
 
 export default {
   name: "Home",
@@ -30,7 +32,9 @@ export default {
     HTTPBasic,
     BrowserTheory,
     BrowserOptimize,
-    ES6Summary
+    ES6Summary,
+    InterviewSummary,
+    Coding
   },
   props: {},
   data() {
@@ -48,6 +52,8 @@ export default {
         { code: "http", component: "HTTPBasic" },
         { code: "BrowserTheory", component: "BrowserTheory" },
         { code: "BrowserOptimize", component: "BrowserOptimize" },
+        { code: "InterviewSummary", component: "InterviewSummary" },
+        { code: "Coding", component: "Coding" },
       ],
     };
   },

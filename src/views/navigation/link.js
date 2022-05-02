@@ -122,11 +122,20 @@ export default {
       herf: "https://www.npmjs.com/package/qs",
       title:"querystring序列化和反序列化"
     },
+    {
+      name:'webpack教程',
+      herf:'http://webpack.wuhaolin.cn/',
+      title:'webpack电子教程'
+    }
   ],
   dalao:[
     {
       name:'算法题解',
       herf:'https://programmercarl.com/'
+    },
+    {
+      name:'shymean',
+      herf:'https://www.shymean.com/'
     },
     {
       name: "ali-李金珂",
