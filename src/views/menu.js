@@ -12,4 +12,5 @@ export const NotesMenu = [
   { index: "notes-11", to: "/notes/ES6Summary", label: "ES6总结" },
   { index: "notes-12", to: "/notes/InterviewSummary", label: "常见知识点" },
   { index: "notes-13", to: "/notes/Coding", label: "手写代码" },
+  { index: "notes-14", to: "/notes/reactTheory", label: "React原理" },
 ];
