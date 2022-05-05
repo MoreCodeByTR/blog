@@ -13,7 +13,7 @@
     </el-header>
     <el-container>
       <el-aside width="200px">
-        <el-menu :default-openeds="['4']" router>
+        <el-menu  router>
           <el-submenu index="1">
             <template slot="title"
               ><i class="el-icon-message"></i>
