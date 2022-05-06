@@ -13,4 +13,5 @@ export const NotesMenu = [
   { index: "notes-12", to: "/notes/InterviewSummary", label: "常见知识点" },
   { index: "notes-13", to: "/notes/Coding", label: "手写代码" },
   { index: "notes-14", to: "/notes/reactTheory", label: "React原理" },
+  { index: "notes-15", to: "/notes/commonScene", label: "场景题目" },
 ];
