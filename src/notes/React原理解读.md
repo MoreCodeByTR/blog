@@ -118,3 +118,58 @@ key值在react的diff过程中进行同级比较使用，作为每个元素的�
 
 不要使用index作为key,没有优化效果，反优化。
 不指定key时会默认使用index作为key，会导致bug
+
+----
+## 11.React18新特性
+> Automatic Batching 默认开启批处理
+
+如果需要setState同步处理，需要在flushSync中进行回调函数调用
+
+> Concurrent Mode
+
+支持异步可中断的渲染
+
+> Concurrent APIs
+- startTransition()
+- useDeferredValue()
+- useTransition()
+
+> SSR for Suspense
+
+支持服务端的Suspense
+
+> New Render API
+
+createRoot，可以开启concurrent模式
+
+> New Hooks
+- useId
+- useTransition
+- useDeferredValue
+- useSyncExternalStore
+- useInsertionEffect
+
+----
+## 12.React16、17、18对比
+- 16新增了hooks
+- 17中，委托机制进行了更改，React 不会再将事件处理添加到 document 上，而是将事件处理添加到渲染 React 树的根 DOM 容器中。
+- 18支持并发渲染，自动批处理，服务端suspense
+
+----
+## 13.React fiber
+https://segmentfault.com/a/1190000039682751
+
+> 双缓冲 current tree、work in progress tree
+
+能够最大限度的实现节点的复用，减少性能开销。
+
+current tree代表的是当前视图，在work in progress tree进行节点更新，更新完成后，指针互换。
+
+
+> Scheduler 调度器
+
+任务的同步还是异步调用，根据任务的优点级决定
+
+> 时间切片的原理
+
+React 会根据浏览器的帧率，计算出时间切片的大小，并结合当前时间计算出每一个切片的到期时间。在 workLoopConcurrent中，while循环每次执行前，会调用 shouldYield函数来询问当前时间切片是否到期，若已到期，则结束循环、出让主线程的控制权。
