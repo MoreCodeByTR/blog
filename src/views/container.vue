@@ -2,10 +2,10 @@
   <el-container>
     <el-header height="70px">
       <a target="_blank" href="https://github.com/MoreCodeByTR" title="github">
-         <img
-        class="avatar"
-        src="https://avatars.githubusercontent.com/u/51108500?v=4"
-      />
+        <img
+          class="avatar"
+          src="https://avatars.githubusercontent.com/u/51108500?v=4"
+        />
       </a>
       <span style="font-family: STKaiti; font-size: 25px; margin-left: 20px"
         ><i>Hi, nice to meet you</i></span
@@ -13,11 +13,16 @@
     </el-header>
     <el-container>
       <el-aside width="200px">
-        <el-menu  router>
+        <el-menu router>
           <el-submenu index="1">
             <template slot="title"
-              ><i class="el-icon-message"></i>
-              <router-link to="/navigation">测试</router-link>
+              ><i class="el-icon-menu"></i>
+              <router-link to="/navigation">我的链接</router-link>
+            </template>
+          </el-submenu>
+          <el-submenu index="2">
+            <template slot="title"
+              ><i class="el-icon-files"></i>组件测试
             </template>
             <el-menu-item-group>
               <router-link to="/test">
@@ -34,15 +39,9 @@
               </router-link>
             </el-menu-item-group>
           </el-submenu>
-          <el-submenu index="2">
-            <template slot="title"
-              ><i class="el-icon-menu"></i>
-              <router-link to="/navigation">我的链接</router-link>
-            </template>
-          </el-submenu>
           <el-submenu index="3">
             <template slot="title"
-              ><i class="el-icon-s-ticket"></i>我的笔记</template
+              ><i class="el-icon-folder-opened"></i>我的笔记</template
             >
             <el-menu-item-group>
               <router-link to="/markdown/hello">
@@ -70,11 +69,15 @@
           </el-submenu>
           <el-submenu index="4">
             <template slot="title"
-              ><i class="el-icon-s-ticket"></i>面试学习</template
+              ><i class="el-icon-folder-opened"></i>知识总结</template
             >
             <el-menu-item-group>
-               <router-link  v-for="item in NotesMenu" :key="item.key" :to="item.to">
-                <el-menu-item :index="item.key">{{item.label}} </el-menu-item>
+              <router-link
+                v-for="item in NotesMenu"
+                :key="item.key"
+                :to="item.to"
+              >
+                <el-menu-item :index="item.key">{{ item.label }} </el-menu-item>
               </router-link>
             </el-menu-item-group>
           </el-submenu>
@@ -93,7 +96,7 @@
   </el-container>
 </template>
 <script>
-import {NotesMenu} from'./menu'
+import { NotesMenu } from "./menu";
 export default {
   name: "Container",
   props: {
@@ -101,7 +104,7 @@ export default {
   },
   data() {
     return {
-      NotesMenu:NotesMenu,
+      NotesMenu: NotesMenu,
       active: 2,
       count: 1,
       rate: 1,
