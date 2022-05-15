@@ -19,6 +19,7 @@ import InterviewSummary from "@/notes/面试总结.md";
 import Coding from "@/notes/手写代码题.md";
 import reactTheory from "@/notes/React原理解读.md";
 import commonScene from "@/notes/常见场景题目.md";
+import WeChatMp from "@/notes/微信小程序基础.md";
 
 export default {
   name: "Home",
@@ -38,7 +39,8 @@ export default {
     InterviewSummary,
     Coding,
     reactTheory,
-    commonScene
+    commonScene,
+    WeChatMp
   },
   props: {},
   data() {
@@ -59,7 +61,8 @@ export default {
         { code: "InterviewSummary", component: "InterviewSummary" },
         { code: "Coding", component: "Coding" },
         { code: "reactTheory", component: "reactTheory" },
-        {code:'commonScene',component:'commonScene'}
+        {code:'commonScene',component:'commonScene'},
+        {code:'WeChatMp',component:'WeChatMp'}
       ],
     };
   },
