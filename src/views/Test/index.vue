@@ -17,13 +17,15 @@
       >
     </div>
     <canvas ref="canvas" width="150" height="150"> </canvas>
+    <sync-child :count="count" @add-count="addCount"/>
   </div>
 </template>
 <script>
 import qs from "qs"
+import syncChild from './syncChild.vue'
 export default {
   name: "Home",
-  components: {},
+  components: {syncChild},
   props: {},
   data() {
     return {
@@ -73,6 +75,9 @@ export default {
       // let arr = [2, 3]
       this.myParams = qs.parse("a=c")
     },
+    addCount() {
+      this.count++
+    }
   },
 }
 </script>

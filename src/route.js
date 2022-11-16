@@ -8,6 +8,7 @@ const Login = () => import("@/views/Login")
 const Article = () => import("@/views/Article")
 const MarkDown = () => import("@/views/MarkDown")
 const Notes = () => import("@/views/Notes")
+const Transition=() => import("@/views/TransitionDemo")
 
 const Navigation = () => import("@/views/navigation")
 const Test = () => import("@/views/Test")
@@ -41,6 +42,10 @@ export default [
       {
         path: "/article",
         component: Article,
+      },
+      {
+        path:"/transition",
+        component:Transition
       },
       {
         path: "/markdown/:articleName",

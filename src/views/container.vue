@@ -37,6 +37,9 @@
               <router-link to="/login">
                 <el-menu-item index="1-3">用户登录 </el-menu-item>
               </router-link>
+              <router-link to="/transition">
+                <el-menu-item index="1-4">动画效果 </el-menu-item>
+              </router-link>
             </el-menu-item-group>
           </el-submenu>
           <el-submenu index="3">
